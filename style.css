@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Source Code Pro;
+}
+
+:root {
+  --background: #090907;
+  --text: #f3f2f1;
+  --primary: #8e7c5d;
+  --secondary: #5a4b35;
+  --accent: #7d673f;
+  --tertiary: #191610;
+}
+
+html {
+  font-size: 62.5%;
+  color: var(--text);
+}
+
+body {
+  background: var(--background);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+body :not(nav, footer) {
+  align-content: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bacasime Antique";
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+nav {
+  position: fixed;
+  background: var(--background);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 1.7rem 0;
+  z-index: 2;
+}
+
+.navbar-logo {
+  padding: 0 3rem;
+}
+.navbar-buttons {
+  padding: 0 3rem;
+}
+
+.hero-container {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("assets/hero.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+.hero-text-container {
+  margin: 0 15rem;
+}
+
+.hero-title {
+  font-size: 6rem;
+  margin: 1.5rem 0;
+}
+.hero-description {
+  font-size: 2.3rem;
+  margin: 1.5rem 0 6rem;
+}
+.hero-button {
+  font-size: 3rem;
+  margin: 3rem 0;
+  border: solid var(--primary);
+  padding: 1rem 2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+  transition: 0.3s ease-in;
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 4.5rem 4rem;
+}
+.about-tickets-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-column-gap: 6rem;
+}
+.about-tickets {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.about-description {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.about-title-tickets {
+  text-align: center;
+  font-size: 4rem;
+}
+.about-title-tickets,
+.about-description-tickets {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.attractions-container {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.attraction-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  gap: 3rem;
+}
+
+.attraction-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.attraction-image-container {
+  width: 40rem;
+  height: 30rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attraction-image {
+  transition: 0.4s;
+}
+
+.attraction-image-container:hover img {
+  transform: scale(1.15);
+  transform-origin: 50% 50%;
+}
+.attraction-title {
+  font-size: 4.4rem;
+  transform: translateY(-60%);
+  transition: 0.4s;
+  color: var(--background);
+  font-family: Aguafina Script;
+}
+.attraction-card:hover .attraction-title {
+  transform: scale(0.5);
+  transition: 0.3s;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 3rem 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer {
+  background-color: var(--secondary);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 4rem;
+}
