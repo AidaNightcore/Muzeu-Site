@@ -27,6 +27,11 @@ body {
   min-height: 100vh;
   justify-content: space-between;
 }
+a,
+p,
+h4 {
+  font-size: 1.7rem;
+}
 
 body :not(nav, footer) {
   align-content: center;
@@ -36,7 +41,7 @@ h1,
 h2,
 h3 {
   font-family: "Bacasime Antique";
-  font-size: 3rem;
+  font-size: 4.3rem;
 }
 
 a {
@@ -79,11 +84,11 @@ nav {
 }
 
 .hero-title {
-  font-size: 6rem;
+  font-size: 7rem;
   margin: 1.5rem 0;
 }
 .hero-description {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   margin: 1.5rem 0 6rem;
 }
 .hero-button {
@@ -111,7 +116,6 @@ nav {
 .about-tickets-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   grid-column-gap: 6rem;
 }
 .about-tickets {
@@ -122,16 +126,15 @@ nav {
 }
 .about-description {
   text-align: center;
-  font-size: 1.5rem;
 }
 .about-title-tickets {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.2rem;
+  font-family: "Seaweed Script";
 }
 .about-title-tickets,
 .about-description-tickets {
   text-align: center;
-  font-size: 1.5rem;
 }
 
 .attractions-container {
@@ -150,14 +153,15 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 3rem 0;
-  gap: 3rem;
+  gap: 5rem;
+  width: 90vw;
 }
 
 .attraction-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 }
 
 .attraction-image-container {
@@ -176,36 +180,81 @@ nav {
   transform: scale(1.15);
   transform-origin: 50% 50%;
 }
+
 .attraction-title {
-  font-size: 4.4rem;
-  transform: translateY(-60%);
+  transform: scale(3) translateY(-0.5rem);
   transition: 0.4s;
   color: var(--background);
-  font-family: Aguafina Script;
+  font-family: "Seaweed Script";
 }
 .attraction-card:hover .attraction-title {
-  transform: scale(0.5);
   transition: 0.3s;
+  transform: scale(1.5);
 }
 
 .contact-container {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
-  padding: 3rem 4rem;
+  gap: 5rem;
+  padding: 3rem 15vw;
   justify-content: center;
   align-items: center;
 }
+
+.contact-img {
+  width: 40vw;
+  height: auto;
+}
+
 .contact-info-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.contact-description {
+  margin: 1rem 0;
+}
+
+.contact-text-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.4rem 0;
+}
+
+.contact-text-container a {
+}
+
+.contact-text-container p {
+}
+
 footer {
   background-color: var(--secondary);
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
+}
+footer section {
+  width: 30%;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+.footer-about,
+.footer-contact,
+.footer-attractions {
+  color: var(--text);
+}
+.bx {
+  font-size: 3rem;
+  color: var(--text);
+}
+.footer-socials-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
 }
