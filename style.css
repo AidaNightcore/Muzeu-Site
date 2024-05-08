@@ -154,7 +154,6 @@ nav {
   justify-content: center;
   padding: 3rem 0;
   gap: 5rem;
-  width: 90vw;
 }
 
 .attraction-card {
@@ -165,8 +164,8 @@ nav {
 }
 
 .attraction-image-container {
-  width: 40rem;
-  height: 30rem;
+  width: 45rem;
+  height: 35rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -257,4 +256,27 @@ footer section {
   flex-direction: row;
   align-items: center;
   gap: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  /* footer {
+    flex-direction: column;
+  } */
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .about-tickets-container {
+    grid-template-columns: auto;
+  }
+  .attraction-image-container {
+    width: 40rem;
+    height: 30rem;
+  }
+  .attraction-title {
+    transform: scale(2.5);
+  }
+  .contact-img {
+    width: 40vh;
+  }
+  
 }
