@@ -63,6 +63,7 @@ nav {
 
 .navbar-logo {
   padding: 0 3rem;
+  width: 5rem;
 }
 .navbar-buttons {
   padding: 0 3rem;
@@ -257,6 +258,9 @@ footer section {
   align-items: center;
   gap: 1.5rem;
 }
+.footer-logo {
+  width: 20rem;
+}
 @media only screen and (max-width: 768px) {
   /* footer {
     flex-direction: column;
@@ -278,5 +282,4 @@ footer section {
   .contact-img {
     width: 40vh;
   }
-  
 }
